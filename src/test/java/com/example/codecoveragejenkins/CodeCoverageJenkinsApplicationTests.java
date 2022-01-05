@@ -28,6 +28,7 @@ class CodeCoverageJenkinsApplicationTests {
 	public void checkPalindromeViaController() {
 		assertTrue(codeCoverageJenkinsApplication.checkPalindrome(""));
 		assertFalse(codeCoverageJenkinsApplication.checkPalindrome("Test"));
+		assertTrue(codeCoverageJenkinsApplication.checkPalindrome("abba"));
 	}
 
 }
