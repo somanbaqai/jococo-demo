@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
@@ -26,6 +27,7 @@ class CodeCoverageJenkinsApplicationTests {
 	@Test
 	public void checkPalindromeViaController() {
 		assertTrue(codeCoverageJenkinsApplication.checkPalindrome(""));
+		assertFalse(codeCoverageJenkinsApplication.checkPalindrome("Test"));
 	}
 
 }
